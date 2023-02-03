@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
+import { ContactListComponent } from './contact-list/contact-list.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'contacts',
+    component: ContactListComponent,
+    canActivate: [AuthGuard]
+  }
+];
+
+// /contacts route is now protected by newly created AuthGuard
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
