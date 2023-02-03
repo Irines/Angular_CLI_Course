@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-cli-8f0ca": {
+      "hosting": {
+        "angular-sample-app": [
+          "angular-cli-8f0ca"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-cli-8f0ca"
+  }
+}
